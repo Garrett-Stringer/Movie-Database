@@ -11,9 +11,37 @@ public class Database
         int index2 = 0;                      //Used to provide a partial numbered list of the movies
         String userInput1 = "";              //Used to select a menu option
         String userInput2 = "";              //Used to type in a movie or actor name
-        String userInput3 = "";              //Used to continue or end loop
+        String userInput3 = "N";             //Used to continue or end loop
         
         //Movies.add("Deadpool"); example format and movie
+        
+        while(userInput3 != Y)
+        {
+        System.out.println("What would you like to do in the database.");
+        System.out.println("[1] Search Movies");
+        System.out.println("[2] Add Movie");
+        System.out.println("[3] Remove Movie");
+        System.out.println("[4] See All Movies");
+        //System.out.println("[5] Search Movie by Actor"); 
+        //Option number 5 may be implemented at a later date. 
+        //Currently working out how to implement it.
+        userInput1 = in.next();
+        
+        if(userInput1.equals ("1"))
+        {
+            System.out.println("Please type in the movie you want to search with correct punctuation");
+            userInput2 = in.next();
+            if(Movies.contains(userInput2))
+            {
+                System.out.println("You do have " + userInput2 + ".");
+            }
+            if(!Movies.contains(userInput2))
+            {
+                System.out.println("You do not have " + userInput2 + "."
+            }
+        }
+        //WIP
+        }
         
         //WIP
     }
