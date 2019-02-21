@@ -1,0 +1,20 @@
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Scanner;
+public class Database
+{
+    public static void main(String [] args)
+    {
+        List Movies = new ArrayList();       //Where the movies are stored
+        Scanner in = new Scanner(System.in); //Allows user input
+        int index = Movies.size();           //How many movies are stored
+        int index2 = 0;                      //Used to provide a partial numbered list of the movies
+        String userInput1 = "";              //Used to select a menu option
+        String userInput2 = "";              //Used to type in a movie or actor name
+        String userInput3 = "";              //Used to continue or end loop
+        
+        //Movies.add("Deadpool"); example format and movie
+        
+        //WIP
+    }
+}
