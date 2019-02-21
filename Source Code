@@ -8,7 +8,7 @@ public class Database
         List Movies = new ArrayList();       //Where the movies are stored
         Scanner in = new Scanner(System.in); //Allows user input
         int index = Movies.size();           //How many movies are stored
-        int index2 = 0;                      //Used to provide a partial numbered list of the movies
+        int index2 = 1;                      //Used to provide a partial numbered list of the movies
         String userInput1 = "";              //Used to select a menu option
         String userInput2 = "";              //Used to type in a movie or actor name
         String userInput3 = "N";             //Used to continue or end loop
@@ -38,6 +38,28 @@ public class Database
             if(!Movies.contains(userInput2))
             {
                 System.out.println("You do not have " + userInput2 + "."
+            }
+        }
+        if(userInput1.equals ("2"))
+        {
+            System.out.println("Please type in the name of the movie you would like to add to the database");
+            userInput2 = in.next();
+            Movies.add(userInput2);
+            System.out.println(userInput2 + " has been added to the database and will show up in future searches.");
+        }
+        if(userInput1.equals ("3"))
+        {
+            System.out.println("Please type in the name of the movie you would like to remove from the database");
+            userInput2 = in.next();
+            Movies.remove(userInput2);
+            System.out.println(userInput2 + " has been removed from the database and will not show up in future searches.");
+        }
+        if(userInput1.equals ("4")
+        {
+            while(index2 <= Movies.size())
+            {
+                System.out.println(index2 + ". " + Movies.index(index2))
+                index2++;
             }
         }
         //WIP
