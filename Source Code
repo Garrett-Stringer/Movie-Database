@@ -1,7 +1,7 @@
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Scanner;
-public class Database
+public class Database1
 {
     public static void main(String [] args)
     {
@@ -13,9 +13,9 @@ public class Database
        String userInput1 = "";              //Used to select a menu option
        String userInput2 = "";              //Used to type in a movie or actor name
        String userInput3 = "";              //Used to continue or end loop
-       String loopTerminate = "false";        //Used to continue or end loop
+       String loopTerminate = "false";      //Used to continue or end loop
         
-       //Movies.add("Deadpool"); example format and movie
+       Movies.add("Deadpool"); //example format and movie
        //The above line of code is if you want to add the movies
        //manually instead of running the program to do so.
        //If you do want to manually add the movies make sure you write teh code with the double slashes.
@@ -76,9 +76,9 @@ public class Database
         }
         if(userInput1.equals ("4"))
         {
-            while(index3 <= Movies.size())
+            while(index3 <= Movies.size() && index2 <= Movies.size())
             {
-                System.out.println(index2 + ". " + Movies.indexOf(index3));
+                System.out.println(index2 + ". " + Movies.get(index3));
                 index2++;
                 index3++;
             }
